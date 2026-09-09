@@ -18,7 +18,8 @@ def faixa_etaria(idade):
 def main():
     ano = obter_ano_nascimento()
     idade = calcular_idade(ano)
-    print(f"Sua idade aproximada é {idade} anos.")
+    unidade = "ano" if idade == 1 else "anos"
+    print(f"Sua idade aproximada é {idade} {unidade}.")
     print(f"Faixa etária: {faixa_etaria(idade)}")
 
 if __name__ == "__main__":
